@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.segmentfault.spring.ioc.token.Man" >
+        <property name="array[0]" value="0"></property>
+        <property name="array[1]" value="1"></property>
+        <property name="array[2]" value="2"></property>
+
+        <property name="list">
+            <list>
+                <value>haha</value>
+                <value>xixi</value>
+                <value>hoho</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+</beans>
