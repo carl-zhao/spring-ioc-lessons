@@ -1,18 +1,15 @@
 package com.segmentfault.spring.ioc;
 
-import com.segmentfault.spring.ioc.pogo.User;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        ApplicationContext context = new ClassPathXmlApplicationContext("xml-bean.xml");
-        context.getBean(User.class);
+@SpringBootApplication
+public class App {
+    public static void main( String[] args ) {
+        SpringApplication.run(App.class, args);
     }
 }
